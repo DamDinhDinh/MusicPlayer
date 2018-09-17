@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/imgBtnTimer"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingTop="3dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/tvSongTitlePlaying"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:paddingLeft="30dp"
+                android:id="@+id/tvSongArtistPlaying"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+
+
+
+        <ImageButton
+            android:id="@+id/imgBtnTimer"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/baseline_timer_white_48dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgSongImagePlaying"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/disk_playing_music"/>
+    </RelativeLayout>
+</LinearLayout>
